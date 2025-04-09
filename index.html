@@ -5,14 +5,598 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>My | Tutor</title>
   <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body>
-  <div>
-    <h2 class=" text-6xl text-green-800 text-center">my totur project</h2>
-  </div>
+<body class="">
+
+  <!-- Navigation -->
+  <header class="container bg-white py-4 font-inter">
+    <div class="flex justify-between items-center">
+      <a href="#">
+        <img src="src/assets/image/logo.png" alt="logo">
+      </a>
+      <nav class="hidden md:flex gap-9">
+        <ul class="flex items-center space-x-11">
+          <li>
+            <a data-title="About us" href="#"
+              class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">About
+              us</a>
+          </li>
+          <li>
+            <a data-title="Courses" href="#"
+              class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">Courses</a>
+          </li>
+          <li>
+            <a data-title="Events" href="#"
+              class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">Events</a>
+          </li>
+          <li>
+            <a data-title="Blogs" href="#"
+              class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">Blogs</a>
+          </li>
+        </ul>
+        <button class="btn">Apply Now</button>
+      </nav>
+
+      <button class="md:hidden text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+      </button>
+    </div>
+    <nav class="hidden space-y-4 mt-4">
+      <ul class="text-center">
+        <li>
+          <a data-title="About us" href="#"
+            class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">About
+            us</a>
+        </li>
+        <li>
+          <a data-title="Courses" href="#"
+            class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">Courses</a>
+        </li>
+        <li>
+          <a data-title="Events" href="#"
+            class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">Events</a>
+        </li>
+        <li>
+          <a data-title="Blogs" href="#"
+            class="text-[#424352] font-medium inline-block hover:font-bold after:block after:font-bold after:content-[attr(data-title)] after:h-0 after:overflow-hidden after:invisible transition-all">Blogs</a>
+        </li>
+      </ul>
+      <button class="btn">Apply Now</button>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="relative bg-secondary">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        <div class="w-full lg:w-[455px] lg:-mr-56 mt-6 md:mt-12 lg:mt-0 text-white">
+          <span class="px-2 py-[7px] bg-white/15 text-sm rounded-ex-sm tracking-[1%]">Specialization over
+            generalization</span>
+          <h1 class="my-5 ">Advanced Data Science & AI Course</h1>
+          <p class="text-[17px] text-white/90 ">Equip yourself with data science skills through live, interactive
+            lectures
+            guided by industry expert mentors</p>
+          <h3 class="mt-5 tracking-wide">Live Interactive Classes</h3>
+          <button
+            class="flex items-center gap-2 group bg-white font-medium p-4 text-[#272727] hover:text-secondary transition-all duration-500 mt-9 btn">
+            <svg class="group-hover:stroke-secondary size-4" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M13.125 9.375v2.5a1.25 1.25 0 0 1-1.25 1.25h-8.75a1.25 1.25 0 0 1-1.25-1.25v-2.5m2.5-3.125L7.5 9.375l3.125-3.125M7.5 9.375v-7.5" />
+            </svg> Download Brochure</button>
+        </div>
+
+        <div class="w-full lg:w-[1041px] flex flex-col lg:flex-row items-end">
+          <div class="w-full lg:w-[calc(100%-429px)] order-2 lg:order-1">
+            <img class="w-full" src="src/assets/image/hero-image.png" alt="">
+          </div>
+          <div class="w-full lg:w-[429px] lg:pl-5 order-1 lg:order-2">
+            <div class=" bg-white px-[30px] py-8 rounded-lg shadow-md mt-6 md:mt-12 mb-10">
+              <h2 class="">We’re here to help!</h2>
+              <h5 class="text-[#252525]/70 mt-4">Please contact us in case of any query.</h5>
+              <form class="space-y-8 mt-11">
+                <input type="text" placeholder="Your name"
+                  class="w-full text-[#727695] px-3 py-4 border border-[#E6E9FC] rounded-ex-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary placeholder:text-[#727695] transition-all duration-500">
+                <input type="email" placeholder="Your email address"
+                  class="w-full text-[#727695] px-3 py-4 border border-[#E6E9FC] rounded-ex-sm  focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary placeholder:text-[#727695] transition-all duration-500">
+                <input type="tel" placeholder="Your phone number"
+                  class="w-full text-[#727695] px-3 py-4 border border-[#E6E9FC] rounded-ex-sm  focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary placeholder:text-[#727695] transition-all duration-500">
+                <div class="relative w-full">
+                  <select
+                    class="w-full text-[#727695] px-3 py-4 border border-[#E6E9FC] rounded-ex-sm appearance-none focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all duration-500">
+                    <option>Select Course</option>
+                    <option>Advanced Data Science & AI</option>
+                    <option>System Design Masterclass</option>
+                  </select>
+
+                  <!-- Custom arrow -->
+                  <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" fill="none">
+                      <path stroke="#727695" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6 6-6" />
+                    </svg>
+                  </div>
+                </div>
+              </form>
+              <button type="submit" class="btn mt-11 flex items-center gap-4 group">Get in Touch
+                <svg class="group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="12" height="11"
+                  fill="none">
+                  <path fill="currentColor"
+                    d="M9.132 4.788 5.102.994 6.159 0 12 5.5 6.158 11l-1.055-.994 4.029-3.794H0V4.788h9.132Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Stats Section -->
+  <section class="container py-18">
+    <div
+      class=" max-w-[1128px] mx-auto bg-white shadow-3xl rounded-[10px] flex items-center justify-between gap-4 px-5 flex-wrap lg:px-10 py-8">
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-14 h-14 bg-[#F4F6F9] rounded-full flex items-center justify-center">
+          <img src="src/assets/icon/trending-up.png" alt="trending-up">
+        </div>
+        <div>
+          <p class="text-[32px] leading-8 tracking-wide text-[#27B94E] font-bold">126%</p>
+          <p class="text-dark-gray mt-2">170% Average Salary Hike</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-14 h-14 bg-[#F4F6F9] rounded-full flex items-center justify-center">
+          <img src="src/assets/icon/job.png" alt="job">
+        </div>
+        <div>
+          <p class="text-[32px] leading-8 tracking-wide text-[#FFA41B] font-bold">100+</p>
+          <p class="text-dark-gray mt-2">Job Placments</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <div class="w-14 h-14 bg-[#F4F6F9] rounded-full flex items-center justify-center">
+          <img src="src/assets/icon/live.png" alt="live">
+        </div>
+        <div>
+          <p class="text-[32px] leading-8 tracking-wide text-[#D60000] font-bold">Live</p>
+          <p class="text-dark-gray mt-2">Interactive Sessions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Courses -->
+  <section class="pt-17 pb-22 bg-[#F8FBFB]">
+    <div class="container">
+      <div class="px-[61px]">
+        <div class="text-center pb-12">
+          <span class="text-secondary font-popins font-semibold leading-6 tracking-wider">RELATED COURSES</span>
+          <h2 class="mt-4 text-primary">Why Join this Program ?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-9">
+          <div class="flex flex-col items-center justify-center bg-white px-8 py-9 rounded-2xl shadow-4xl">
+            <div class="w-18 h-18 bg-secondary rounded-full flex items-center justify-center">
+              <img src="src/assets/icon/hourglass.png" alt="hourglass">
+            </div>
+            <h3 class="font-semibold my-6">Real Work Experience</h3>
+            <p class="text-center text-[#6F6B80]">Work with companies directly on software development projects to
+              master your skills and build a strong project portfolio to get your.</p>
+          </div>
+          <div class="flex flex-col items-center justify-center bg-white px-8 py-9 rounded-2xl shadow-4xl">
+            <div class="w-18 h-18 bg-secondary rounded-full flex items-center justify-center">
+              <img src="src/assets/icon/hourglass.png" alt="hourglass">
+            </div>
+            <h3 class="font-semibold my-6">Guaranteed job referral</h3>
+            <p class="text-center text-[#6F6B80]">Our program seeks to eliminate financial risk in the upskilling
+              journey with our guaranteed Job referrals option</p>
+          </div>
+          <div class="flex flex-col items-center justify-center bg-white px-8 py-9 rounded-2xl shadow-4xl">
+            <div class="w-18 h-18 bg-secondary rounded-full flex items-center justify-center">
+              <img src="src/assets/icon/hourglass.png" alt="hourglass">
+            </div>
+            <h3 class="font-semibold my-6">Crack FAANG Interview</h3>
+            <p class="text-center text-[#6F6B80]">Interact and Learn from mentors working in top product based companies
+              to crack interviews for your dream role.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Alumni Section -->
+  <section class="pt-17 pb-22 ">
+    <div class="container">
+      <div class="text-center pb-12">
+        <span class="text-secondary font-popins font-semibold leading-6 tracking-wider">Our Alumni Placed</span>
+        <h2 class="mt-4 text-primary">Explore Our Alumni & Connect With Them</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Shaumaya Qha</h4>
+              <p class="text-gray-600 text-sm">Software Engineer</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">"Apart from regular live classes, I was assigned with a Mentor someone from
+            Microsoft and he guided me very well through out the course."</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="mr-2">JPMorgan, Walmart</span>
+            <a href="#" class="text-blue-600">Read full review</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Subhangi Duhan</h4>
+              <p class="text-gray-600 text-sm">Software Researcher</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">"My focus and expectations was more into System Design and I have learned a lot
+            of it, Specially High Level design and that helped me to crack Microsoft."</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="mr-2">JPMorgan, Microsoft</span>
+            <a href="#" class="text-blue-600">Read full review</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Paras Yadav</h4>
+              <p class="text-gray-600 text-sm">Software Tester</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">"Consistency is the key, that I have learned from my Mentor at My_Tutor. He
+            usually motivates me to be consistent is class and solving problems."</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="mr-2">COMMSCOPE, COHESITY</span>
+            <a href="#" class="text-blue-600">Read full review</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button type="submit" class="btn px-6 py-[18px] flex items-center gap-4 group">Connect Now
+          <svg class="group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="12" height="11" fill="none">
+            <path fill="currentColor"
+              d="M9.132 4.788 5.102.994 6.159 0 12 5.5 6.158 11l-1.055-.994 4.029-3.794H0V4.788h9.132Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">A Roadmap For Success</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Course Description</h3>
+          <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+            maecenas accumsan lacus vel facilisis.</p>
+          <div class="space-y-2">
+            <div class="flex items-center">
+              <i class="fas fa-check text-blue-600 mr-2"></i>
+              <span>Unit 0 - Foundation Of Programming</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check text-blue-600 mr-2"></i>
+              <span>Unit 1 - Data Structures and Algorithms</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check text-blue-600 mr-2"></i>
+              <span>Unit 2 - System Design in Depth</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check text-blue-600 mr-2"></i>
+              <span>Unit 3 - Advance Data Structures & Algorithms</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check text-blue-600 mr-2"></i>
+              <span>Unit 4 - Electives & Specialization</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check text-blue-600 mr-2"></i>
+              <span>Unit 5 - Work on End to End Projects in Partnership With Startups</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Make Your Design Professional</h3>
+          <form class="space-y-4">
+            <input type="text" placeholder="Enter Full Name" class="w-full px-4 py-2 border border-gray-300 rounded-md">
+            <input type="email" placeholder="Enter email address"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md">
+            <input type="tel" placeholder="Enter phone number"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md">
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-md">
+              <option>Select Course</option>
+              <option>Advanced Data Science & AI</option>
+              <option>System Design Masterclass</option>
+            </select>
+            <input type="datetime-local" class="w-full px-4 py-2 border border-gray-300 rounded-md">
+            <div class="flex items-center">
+              <input type="checkbox" id="terms" class="mr-2">
+              <label for="terms" class="text-sm text-gray-600">By submitting the form, you agree to our Terms and
+                Conditions and our Privacy Policy.</label>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">Apply for
+              Counsel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-12 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Hands-on Projects</h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Find out how our Mentor transformed their careers by
+        giving Hands on Projects.</p>
+      <div class="flex justify-center mb-8">
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <img src="https://via.placeholder.com/150" alt="Symantec Logo" class="h-12">
+        </div>
+      </div>
+      <div class="text-center mb-8">
+        <p class="text-4xl font-bold text-blue-600 mb-2">10+</p>
+        <p class="text-gray-600">Projects</p>
+      </div>
+      <div class="bg-blue-50 p-6 rounded-lg max-w-3xl mx-auto">
+        <h3 class="text-xl font-semibold mb-2">Authentication</h3>
+        <p class="text-gray-600">Create authentication technology to give access, Correspond to those stored in a
+          database of authorized users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Highlights -->
+  <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Course Highlights</h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">We are driven by the idea of program affordability.
+        So, we give you several financial options to manage and budget the expenses of your course.</p>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+              <span>350+ Live sessions</span>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+              <span>Industry roles</span>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+              <span>Life time accessibility</span>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+              <span>Live project experience</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+              <p class="text-gray-600">Starting at</p>
+              <p class="text-2xl font-bold">₹120,000 + GST</p>
+            </div>
+            <div>
+              <p class="text-gray-600">EMI starting from:</p>
+              <p class="text-2xl font-bold">₹5,900/month</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Next Cohort Details</h3>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                19
+              </div>
+              <div>
+                <p class="font-semibold">Weekend Batch [Sat - Sun]</p>
+              </div>
+            </div>
+
+            <table class="w-full">
+              <thead>
+                <tr class="border-b">
+                  <th class="text-left py-2">Batch</th>
+                  <th class="text-left py-2">Time</th>
+                  <th class="text-left py-2">Seat</th>
+                  <th class="text-left py-2">Venue</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="py-2">Morning</td>
+                  <td class="py-2">09:00 am-12:00 pm</td>
+                  <td class="py-2">Available</td>
+                  <td class="py-2">Virtual Hall</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">Apply Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mentors Section -->
+  <section class="py-12 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">DISCOVER OUR MENTORS</h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">We have Industry Experts as Mentor who guide you with
+        Career Planning & Interview Preparation</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
+          <h3 class="text-xl font-semibold">Sachin Sharma</h3>
+          <p class="text-gray-600 mb-2">Microsoft</p>
+          <p class="text-sm text-gray-500 mb-4">Managing Director</p>
+          <button class="text-blue-600 border border-blue-600 px-4 py-1 rounded-md hover:bg-blue-50">View
+            Profile</button>
+        </div>
+        <div class="text-center">
+          <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
+          <h3 class="text-xl font-semibold">Santosh Kumar Mishra</h3>
+          <p class="text-gray-600 mb-2">Microsoft</p>
+          <p class="text-sm text-gray-500 mb-4">Managing Director</p>
+          <button class="text-blue-600 border border-blue-600 px-4 py-1 rounded-md hover:bg-blue-50">View
+            Profile</button>
+        </div>
+        <div class="text-center">
+          <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
+          <h3 class="text-xl font-semibold">Prem Kumar</h3>
+          <p class="text-gray-600 mb-2">Microsoft</p>
+          <p class="text-sm text-gray-500 mb-4">Mentorship</p>
+          <button class="text-blue-600 border border-blue-600 px-4 py-1 rounded-md hover:bg-blue-50">View
+            Profile</button>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <button class="text-blue-600 border border-blue-600 px-6 py-2 rounded-md hover:bg-blue-50">More Mentor
+          Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Thousands of stories of growth</h2>
+      <p class="text-center text-gray-600 mb-12">Find out how our Learners transformed their careers after learning with
+        us.</p>
+
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <blockquote class="text-gray-600 mb-6">
+          "As a senior engineer I have specially reviewed the System Design content and live classes of My_Tutor and I
+          found it more on the implementation side instead of theoretical concepts which helps to work in real-time
+          environment in the organization. I would recommend My_Tutor course to get expertise in System Design."
+        </blockquote>
+        <div class="flex items-center">
+          <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+          <div>
+            <h4 class="font-semibold">Prem Kumar Perera</h4>
+            <button class="text-blue-600 text-sm">View Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-12 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">ASK YOUR QUESTIONS</h2>
+      <h3 class="text-xl font-semibold text-center mb-8">Frequently Asked Questions</h3>
+
+      <div class="space-y-4">
+        <div class="border-b pb-4">
+          <button class="flex justify-between items-center w-full text-left">
+            <span class="font-medium">How to enroll for a Course?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="border-b pb-4">
+          <button class="flex justify-between items-center w-full text-left">
+            <span class="font-medium">Can I get the recordings of my previous lectures?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="border-b pb-4">
+          <button class="flex justify-between items-center w-full text-left">
+            <span class="font-medium">Who would be the instructor for enrolled course?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <div class="border-b pb-4">
+          <button class="flex justify-between items-center w-full text-left">
+            <span class="font-medium">What kind of placement support will be given post completion of program?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <img src="src/assets/image/footer-logo.png" alt="">
+        <p class="text-gray-400">It is a long established fact that a reader will be distracted by the readable content
+          of a page when looking at its layout.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Explore</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Useful Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Terms of use</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Contact Info</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li>@ 4517 Washington Ave. Manchester, Kentucky 39495</li>
+          <li>& +91-9024250272</li>
+          <li>& shubhammodi820@gmail.com</li>
+        </ul>
+        <div class="mt-4 space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto pt-8 mt-8 border-t border-gray-800">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">Copyright 2024 My_Tutor | Designed By Shubham Modi</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-white text-sm">Become a Mentor</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm">Contact us</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm">Hire From us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="src/main.js"></script>
 </body>
 

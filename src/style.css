@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 @import "tailwindcss";
 
@@ -11,23 +11,39 @@
 @theme {
 
   /* font family */
-  --font-Montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-popins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-source: "Source Code Pro", monospace;
 
   /* brakpoint */
   --breakpoint-1xl: 90rem;    /* 1440px */
 
   /* colors */
-  --color-primary: #1F1F1F;
-  --color-secondary: #FFD4D0;
+  --color-primary: #000000;
+  --color-secondary: #1B99D4;
   --color-red: #FC3314;
-  --color-gray: #F7F7F7;
-  --color-dark-gray: #8D8D8D;
+  --color-gray: #6F6B80;
+  --color-dark: #231F40;
+  --color-dark-gray: #4D607D;
   --color-medium-gray: #E1E1E1;
+
+  /* border radius */
+  --radius-ex-sm: 0.313rem;  /* 5px */
+
+  /* spacing */
+  --spacing-17: 4.375rem;   /* 70px */
+  --spacing-18: 4.5rem;   /* 72px */
+  --spacing-22: 5.5rem;   /* 88px */
+
+  /* box shadow */
+  --shadow-3xl: 1px 5px 50px rgba(84, 99, 122, 0.1);  
+  --shadow-4xl: 0.914005px 4.57002px 45.7002px rgba(84, 99, 122, 0.1);  
 }
 
 
 body{
-  @apply font-Montserrat text-sm text-primary font-normal leading-[1.5] min-w-80 scroll-smooth
+  @apply font-roboto bg-[#FEFEFE] text-base text-primary font-normal leading-[1.5] min-w-80 scroll-smooth
 }
 button{
   @apply cursor-pointer
@@ -36,15 +52,15 @@ button{
 @layer base{
   h1,
   .h1 {
-    @apply text-3xl lg:text-4xl xl:text-5xl xl:leading-[60px] font-semibold text-primary tracking-wide;
+    @apply text-4xl lg:text-[42px] lg:leading-12 font-bold text-white;
   }
   h2,
   .h2 {
-    @apply text-3xl lg:text-4xl lg:leading-[48px] font-semibold tracking-wider;
+    @apply text-3xl lg:text-4xl lg:leading-8 font-bold text-[#252525];
   }
   h3,
   .h3 {
-    @apply text-lg lg:text-2xl lg:leading-6 font-semibold tracking-wide text-primary;
+    @apply text-lg md:text-xl;
   }
   h4,
   .h4 {
@@ -66,7 +82,7 @@ button{
 
 @layer components{
   .btn{
-    @apply bg-primary text-sm md:text-base font-bold text-center text-white border border-primary px-4 sm:px-6 py-3 hover:bg-red hover:border-red transition-all duration-500 
+    @apply bg-secondary text-white px-5 py-2 rounded-ex-sm font-semibold border border-secondary hover:text-white/60 hover:border-primary transition-all duration-500 
   }
 }
 
@@ -76,7 +92,7 @@ button{
   @apply mx-auto px-4;
   @media (width >= 90rem /* 1440px */) {
         max-width: var(--breakpoint-1xl) /* 1440px */;
-        padding-inline: 7.75rem  /* 124px */; 
+        padding-inline: var(--spacing-18)  /* 72px */; 
     }
 }
 
