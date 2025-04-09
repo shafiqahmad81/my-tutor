@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+
+
+
+@theme {
+
+  /* font family */
+  --font-Montserrat: "Montserrat", sans-serif;
+
+  /* brakpoint */
+  --breakpoint-1xl: 90rem;    /* 1440px */
+
+  /* colors */
+  --color-primary: #1F1F1F;
+  --color-secondary: #FFD4D0;
+  --color-red: #FC3314;
+  --color-gray: #F7F7F7;
+  --color-dark-gray: #8D8D8D;
+  --color-medium-gray: #E1E1E1;
+}
+
+
+body{
+  @apply font-Montserrat text-sm text-primary font-normal leading-[1.5] min-w-80 scroll-smooth
+}
+button{
+  @apply cursor-pointer
+}
+
+@layer base{
+  h1,
+  .h1 {
+    @apply text-3xl lg:text-4xl xl:text-5xl xl:leading-[60px] font-semibold text-primary tracking-wide;
+  }
+  h2,
+  .h2 {
+    @apply text-3xl lg:text-4xl lg:leading-[48px] font-semibold tracking-wider;
+  }
+  h3,
+  .h3 {
+    @apply text-lg lg:text-2xl lg:leading-6 font-semibold tracking-wide text-primary;
+  }
+  h4,
+  .h4 {
+    @apply text-base lg:text-xl font-medium text-primary mb-6;
+  }
+  h5,
+  .h5 {
+    @apply text-sm lg:text-base;
+  }
+  h6,
+  .h6 {
+    @apply text-xs font-medium mb-1;
+  }
+  p{
+    @apply text-base 
+  }
+}
+
+
+@layer components{
+  .btn{
+    @apply bg-primary text-sm md:text-base font-bold text-center text-white border border-primary px-4 sm:px-6 py-3 hover:bg-red hover:border-red transition-all duration-500 
+  }
+}
+
+
+
+@utility container{ 
+  @apply mx-auto px-4;
+  @media (width >= 90rem /* 1440px */) {
+        max-width: var(--breakpoint-1xl) /* 1440px */;
+        padding-inline: 7.75rem  /* 124px */; 
+    }
+}
+
+
