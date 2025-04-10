@@ -40,7 +40,7 @@
         <button class="btn">Apply Now</button>
       </nav>
 
-      <button class="md:hidden text-primary">
+      <button id="menu-icon" class="md:hidden text-primary">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -177,13 +177,13 @@
   <!-- Related Courses -->
   <section class="pt-17 pb-22 bg-[#F8FBFB]">
     <div class="container">
-      <div class="px-[61px]">
+      <div class="lg:px-[61px]">
         <div class="text-center pb-12">
           <span class="text-secondary font-popins font-semibold leading-6 tracking-wider">RELATED COURSES</span>
           <h2 class="mt-4 text-primary">Why Join this Program ?</h2>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-9">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-9">
           <div class="flex flex-col items-center justify-center bg-white px-8 py-9 rounded-2xl shadow-4xl">
             <div class="w-18 h-18 bg-secondary rounded-full flex items-center justify-center">
               <img src="src/assets/icon/hourglass.png" alt="hourglass">
@@ -348,8 +348,8 @@
         <span class="text-secondary font-popins font-semibold leading-6 tracking-wider">A Roadmap For Sucess</span>
         <h2 class="mt-4 text-primary">Our Comprehensive curriculum, Designed for professionals</h2>
       </div>
-      <div class="flex items-center mt-18">
-        <div class="w-[66.305%]">
+      <div class="flex flex-col md:flex-row items-center mt-18 gap-8 lg:gap-18">
+        <div class="md:w-[calc(100%-280px)] lg:w-[calc(100%-360px)]">
           <h3 class="font-bold leading-9 text-[#333333] mb-6">Course Description</h3>
           <p class="text-lg text-gray mb-8 font-normal leading-[135%]">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -359,8 +359,9 @@
             <!-- Accordion Item -->
             <div class="border border-[#D9D9D9] rounded-ex-sm overflow-hidden">
               <button class="w-full flex items-center justify-between px-5 py-4" onclick="toggleAccordion(0)">
-                <span>Unit 0 - Foundation Of Programming</span>
-                <svg id="icon-0" class=" transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
+                <span class="text-lg lg:text-xl font-medium leading-6 text-[#595665]">Unit 0 - Foundation Of
+                  Programming</span>
+                <svg id="icon-0" class="w-8 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="8" fill="none">
                   <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 6 6 6-6" />
@@ -372,8 +373,9 @@
             </div>
             <div class="border border-[#D9D9D9] rounded-ex-sm overflow-hidden">
               <button class="w-full flex items-center justify-between px-5 py-4" onclick="toggleAccordion(1)">
-                <span>Unit 1 - Data Structures and Algorithms</span>
-                <svg id="icon-1" class=" transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
+                <span class="text-lg lg:text-xl font-medium leading-6 text-[#595665]">Unit 1 - Data Structures and
+                  Algorithms</span>
+                <svg id="icon-1" class="w-8 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="8" fill="none">
                   <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 6 6 6-6" />
@@ -385,8 +387,9 @@
             </div>
             <div class="border border-[#D9D9D9] rounded-ex-sm overflow-hidden">
               <button class="w-full flex items-center justify-between px-5 py-4" onclick="toggleAccordion(2)">
-                <span>Unit 2 - System Design in Depth</span>
-                <svg id="icon-2" class=" transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
+                <span class="text-lg lg:text-xl font-medium leading-6 text-[#595665]">Unit 2 - System Design in
+                  Depth</span>
+                <svg id="icon-2" class="w-8 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="8" fill="none">
                   <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 6 6 6-6" />
@@ -398,8 +401,9 @@
             </div>
             <div class="border border-[#D9D9D9] rounded-ex-sm overflow-hidden">
               <button class="w-full flex items-center justify-between px-5 py-4" onclick="toggleAccordion(3)">
-                <span>Unit 3 - Advance Data Structures & Algorithms</span>
-                <svg id="icon-3" class=" transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
+                <span class="text-lg lg:text-xl font-medium leading-6 text-[#595665]">Unit 3 - Advance Data Structures &
+                  Algorithms</span>
+                <svg id="icon-3" class="w-8 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="8" fill="none">
                   <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 6 6 6-6" />
@@ -411,8 +415,9 @@
             </div>
             <div class="border border-[#D9D9D9] rounded-ex-sm overflow-hidden">
               <button class="w-full flex items-center justify-between px-5 py-4" onclick="toggleAccordion(4)">
-                <span>Unit 4 -Electives & Specialization</span>
-                <svg id="icon-4" class=" transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
+                <span class="text-lg lg:text-xl font-medium leading-6 text-[#595665]">Unit 4 -Electives &
+                  Specialization</span>
+                <svg id="icon-4" class="w-8 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="8" fill="none">
                   <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 6 6 6-6" />
@@ -424,8 +429,10 @@
             </div>
             <div class="border border-[#D9D9D9] rounded-ex-sm overflow-hidden">
               <button class="w-full flex items-center justify-between px-5 py-4" onclick="toggleAccordion(5)">
-                <span>Unit 5 -Work on End to End Projects in Partnership With Startups</span>
-                <svg id="icon-5" class=" transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
+                <span class="text-lg lg:text-xl font-medium leading-6 text-[#595665]">Unit 5 -Work on End to End
+                  Projects in
+                  Partnership With Startups</span>
+                <svg id="icon-5" class="w-8 transition-all duration-500" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="8" fill="none">
                   <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1 1 6 6 6-6" />
@@ -435,11 +442,10 @@
                 <p class="text-gray-600">Content for Unit 0 goes here.</p>
               </div>
             </div>
-
           </div>
         </div>
 
-        <div class="w-[calc(100%-66.305%)] pl-18">
+        <div class="md:w-[280px] lg:w-[360px] ">
           <div class=" bg-white rounded-lg px-5 pt-16 pb-12 shadow-2.5xl">
             <h5 class="font-inter text-gray text-center mb-24">Make Your Design Professional</h5>
             <form class="space-y-8 mt-11">
@@ -498,8 +504,8 @@
   <!-- Projects Section -->
   <section class="pt-24 ">
     <div class="container">
-      <div class="flex gap-[7.407%]">
-        <div class="w-[37.269%]">
+      <div class="flex flex-col sm:flex-row items-center  gap-[7.407%] mt-9 mb-28">
+        <div class=" w-full sm:w-[37.269%]">
           <span
             class="text-3xl lg:text-4xl xl:text-5xl xl:leading-16 tracking-wide text-primary/85 font-semibold">Hands-on
             Projects</span>
@@ -518,153 +524,270 @@
               <span>Domains</span>
             </div>
           </div>
+
+          <div class="flex gap-4 mt-9">
+            <button class="w-18 h-18 rounded-full flex justify-center items-center bg-white/30 opacity-30 shadow-2.3xl">
+              <svg class=" fill-[#323232]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                <path
+                  d="M15 9H3.83l4.88 4.88c.39.39.39 1.03 0 1.42a.996.996 0 0 1-1.41 0L.71 8.71a.996.996 0 0 1 0-1.41L7.29.7A.996.996 0 1 1 8.7 2.11L3.83 7H15c.55 0 1 .45 1 1s-.45 1-1 1Z" />
+              </svg>
+            </button>
+            <button class="w-18 h-18 rounded-full flex justify-center items-center bg-white/30 shadow-2.3xl">
+              <svg class=" fill-[#323232]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                <path
+                  d="M1.418 9h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59a.996.996 0 0 0 0-1.41L9.128.7a.996.996 0 1 0-1.41 1.41L12.588 7H1.418c-.55 0-1 .45-1 1s.45 1 1 1Z" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="w-[55.170%]">2</div>
+        <div class="w-full sm:w-[55.170%] lg:pl-9 lg:pr-12 py-16 ">
+          <div class="pl-10 pr-5 pt-11 pb-9 bg-white shadow-3xl">
+            <div class=" max-w-[440px] space-y-[22px] ">
+              <h4 class="text-[22px] font-bold text-[#727695]">Authentication</h4>
+              <div><img src="src/assets/icon/authentication.png" alt="authentication"></div>
+              <p class="text-[#646464]">Create authentication technology to give access, Correspond to those stored in a
+                database of authorized
+                users.</p>
+              <div class="flex items-center gap-2">
+                <span class="text-lg font-medium text-[#646464]">Tools:</span>
+                <div class="flex items-center gap-5">
+                  <div><img src="src/assets/icon/react.png" alt="react"></div>
+                  <div><img src="src/assets/icon/build.png " alt="build"></div>
+                  <div><img src="src/assets/icon/build-blue.png" alt="blue"></div>
+                  <div><img src="src/assets/icon/js.png" alt="js"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-
     </div>
   </section>
 
   <!-- Course Highlights -->
-  <section class="py-12 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8">Course Highlights</h2>
-      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">We are driven by the idea of program affordability.
-        So, we give you several financial options to manage and budget the expenses of your course.</p>
-
-      <div class="grid md:grid-cols-2 gap-12">
-        <div>
-          <div class="grid grid-cols-2 gap-4 mb-8">
-            <div class="flex items-start">
-              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-              <span>350+ Live sessions</span>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-              <span>Industry roles</span>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-              <span>Life time accessibility</span>
-            </div>
-            <div class="flex items-start">
-              <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
-              <span>Live project experience</span>
-            </div>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="mb-4">
-              <p class="text-gray-600">Starting at</p>
-              <p class="text-2xl font-bold">₹120,000 + GST</p>
-            </div>
-            <div>
-              <p class="text-gray-600">EMI starting from:</p>
-              <p class="text-2xl font-bold">₹5,900/month</p>
-            </div>
-          </div>
+  <section class="container">
+    <div class="flex flex-col md:flex-row gap-6 lg:gap-12 p-6">
+      <div class="w-full md:w-[310px] border border-[#D9D9D9] rounded-lg py-7 pl-6 pr-10">
+        <h5 class="text-secondary font-semibold leading-6">Course Highlights</h5>
+        <div class=" mt-9">
+          <ul class="space-y-5">
+            <li>
+              <a class="flex items-center gap-2.5 text-base leading-6 text-[#646464]" href="#"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                  <path fill="#1B99D4"
+                    d="M9.75 10.833V19.5l7.583-4.334-7.583-4.333Zm13-4.333h-8.212l3.564-3.564-.769-.77L13 6.5h-.033L8.634 2.167l-.748.769L11.44 6.5H3.25a2.173 2.173 0 0 0-2.167 2.166v13c0 1.192.975 2.167 2.167 2.167h19.5a2.173 2.173 0 0 0 2.166-2.166v-13A2.173 2.173 0 0 0 22.75 6.5Zm0 15.166H3.25v-13h19.5v13Z" />
+                </svg> 350+ Live sessions</a>
+            </li>
+            <li>
+              <a class="flex items-center gap-2.5 text-base leading-6 text-[#646464]" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                  <path fill="#1B99D4"
+                    d="M7.924 15.019a.204.204 0 0 0 .287 0l2.585-2.585 2.186 2.189a.204.204 0 0 0 .287 0l5.746-5.751a.204.204 0 0 0 0-.287l-.935-.935a.204.204 0 0 0-.287 0l-4.666 4.672-2.187-2.188a.204.204 0 0 0-.286 0L6.99 13.796a.204.204 0 0 0 0 .287l.934.935Z" />
+                  <path fill="#1B99D4"
+                    d="M22.953 4.063h-9.039V2.438a.204.204 0 0 0-.203-.204h-1.422a.204.204 0 0 0-.203.204v1.624h-9.04a.812.812 0 0 0-.812.813v13.203c0 .45.363.813.813.813h9.05v.812l-4.185 2.745a.2.2 0 0 0-.059.28l.77 1.198v.002c.06.094.188.12.281.058L13 21.3l4.096 2.686c.093.061.22.036.281-.058v-.002l.77-1.199a.203.203 0 0 0-.059-.28l-4.174-2.736v-.82h9.04a.812.812 0 0 0 .812-.813V4.875a.812.812 0 0 0-.813-.813Zm-1.015 13H4.063V5.89h17.875v11.171Z" />
+                </svg> 15+ Industry Projects</a>
+            </li>
+            <li>
+              <a class="flex items-center gap-2.5 text-base leading-6 text-[#646464]" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                  <path fill="#1B99D4"
+                    d="M23.994 10.46h-6.5a.204.204 0 0 0-.203.204v1.219c0 .112.091.203.203.203h6.5a.204.204 0 0 0 .203-.203v-1.219a.204.204 0 0 0-.203-.203Zm-3.402 3.454h-3.098a.204.204 0 0 0-.203.203v1.219c0 .112.091.203.203.203h3.098a.204.204 0 0 0 .203-.203v-1.219a.204.204 0 0 0-.203-.203Zm-8.473-5.726h-1.1a.284.284 0 0 0-.284.285v6.297a.28.28 0 0 0 .117.228l3.78 2.758a.283.283 0 0 0 .397-.061l.652-.892v-.002a.284.284 0 0 0-.063-.396L12.4 14.079V8.473a.282.282 0 0 0-.282-.285Z" />
+                  <path fill="#1B99D4"
+                    d="M20.434 17.11h-1.467a.417.417 0 0 0-.353.196c-.323.51-.698.983-1.13 1.415a8.053 8.053 0 0 1-5.72 2.369 8.053 8.053 0 0 1-5.72-2.369A8.053 8.053 0 0 1 3.673 13a8.053 8.053 0 0 1 2.369-5.72 8.053 8.053 0 0 1 5.72-2.37 8.053 8.053 0 0 1 5.72 2.369 8.06 8.06 0 0 1 1.13 1.415.42.42 0 0 0 .354.195h1.467a.232.232 0 0 0 .209-.337 9.93 9.93 0 0 0-8.76-5.477C6.396 3.006 1.838 7.498 1.828 12.98c-.01 5.492 4.441 9.948 9.933 9.948a9.931 9.931 0 0 0 8.882-5.48.233.233 0 0 0-.209-.337Z" />
+                </svg> Life time accessibility</a>
+            </li>
+            <li>
+              <a class="flex items-center gap-2.5 text-base leading-6 text-[#646464]" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                  <path fill="#1B99D4"
+                    d="M21.667 19.5a2.164 2.164 0 0 0 2.155-2.167l.011-11.916a2.173 2.173 0 0 0-2.166-2.167H4.333a2.173 2.173 0 0 0-2.166 2.167v11.916c0 1.192.975 2.167 2.166 2.167H0c0 1.192.975 2.167 2.167 2.167h21.666A2.173 2.173 0 0 0 26 19.5h-4.333ZM4.333 5.417h17.334v11.916H4.333V5.417ZM13 20.583a1.087 1.087 0 0 1-1.083-1.083c0-.596.487-1.083 1.083-1.083s1.083.487 1.083 1.083-.487 1.083-1.083 1.083Z" />
+                </svg> Live project experience</a>
+            </li>
+          </ul>
         </div>
-
-        <div>
-          <h4 class="text-xl font-semibold mb-4">Next Cohort Details</h4>
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-center mb-4">
-              <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                19
-              </div>
-              <div>
-                <p class="font-semibold">Weekend Batch [Sat - Sun]</p>
-              </div>
+      </div>
+      <div
+        class="w-full md:w-[calc(100%-310px)] border border-[#D9D9D9] rounded-lg pt-14 pb-12 pl-6 pr-10 flex flex-col justify-between">
+        <div class="">
+          <p class="text-[#646464] max-w-[730px]">We are driven by the idea of program affordability. So, we give you
+            several
+            financial options to manage
+            and budget the expenses of your course.</p>
+          <div class="flex flex-col lg:flex-row items-center justify-between mt-6 gap-4 text-center lg:text-start">
+            <div class="space-y-4">
+              <h3 class="text-2xl lg:text-[27px] font-bold text-[#2C2C2C]">Starting at ₹ 120,000 + GST</h3>
+              <p class="text-[#2C2C2C]">EMI starting from: ₹ 5,900/month</p>
             </div>
-
-            <table class="w-full">
-              <thead>
-                <tr class="border-b">
-                  <th class="text-left py-2">Batch</th>
-                  <th class="text-left py-2">Time</th>
-                  <th class="text-left py-2">Seat</th>
-                  <th class="text-left py-2">Venue</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="border-b">
-                  <td class="py-2">Morning</td>
-                  <td class="py-2">09:00 am-12:00 pm</td>
-                  <td class="py-2">Available</td>
-                  <td class="py-2">Virtual Hall</td>
-                </tr>
-              </tbody>
-            </table>
+            <button class="btn">Apply Now</button>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="text-center mt-8">
-        <button class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">Apply Now</button>
+  <!-- Course Highlights -->
+  <section class="container mt-20">
+    <h2 class="text-center mb-6">Next Cohort Details</h2>
+    <div class="max-w-[904px] mx-auto border border-[#D9D9D9] rounded-lg pt-5">
+
+      <div
+        class="flex flex-col sm:flex-row gap-6 items-center justify-between pb-5 border-b border-dashed border-[#4F419A]/20 px-4 md:px-10 relative after:absolute after:w-4 after:h-4 after:border after:-bottom-2 after:-left-2 after:rounded-full after:border-[#D9D9D9] after:bg-white">
+        <div class="flex gap-2">
+          <span class="text-5xl font-bold">19</span>
+          <span class="text-xs font-medium text-[#272727] tracking-[3.63px]">MAR</span>
+        </div>
+        <h3>Weekend Batch [Sat - Sun]</h3>
+        <button class="btn text-xs font-medium leading-6 rounded-xs">Enroll Now</button>
+      </div>
+      <div class="flex flex-col sm:flex-row text-center items-center justify-between gap-4 px-6 md:px-10 py-8">
+        <div class="flex flex-col">
+          <span class="text-sm font-medium leading-5 text-[#272727]">Batch</span>
+          <span class="text-lg leading-6 text-[#777D8C]">Morning</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm font-medium leading-5 text-[#272727]">Time</span>
+          <span class="text-lg leading-6 text-[#777D8C]">09:00 am-12:00 pm</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm font-medium leading-5 text-[#272727]">Seat</span>
+          <span class="text-lg leading-6 text-[#777D8C]">Available</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm font-medium leading-5 text-[#272727]">Venue</span>
+          <span class="text-lg leading-6 text-[#777D8C]">Virtual Hall</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Mentors Section -->
-  <section class="py-12 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">DISCOVER OUR MENTORS</h2>
-      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">We have Industry Experts as Mentor who guide you with
-        Career Planning & Interview Preparation</p>
+  <section class="mt-24 mb-28">
+    <div class="container">
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
-          <h4 class="text-xl font-semibold">Sachin Sharma</h4>
-          <p class="text-gray-600 mb-2">Microsoft</p>
-          <p class="text-sm text-gray-500 mb-4">Managing Director</p>
-          <button class="text-blue-600 border border-blue-600 px-4 py-1 rounded-md hover:bg-blue-50">View
-            Profile</button>
-        </div>
-        <div class="text-center">
-          <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
-          <h4 class="text-xl font-semibold">Santosh Kumar Mishra</h4>
-          <p class="text-gray-600 mb-2">Microsoft</p>
-          <p class="text-sm text-gray-500 mb-4">Managing Director</p>
-          <button class="text-blue-600 border border-blue-600 px-4 py-1 rounded-md hover:bg-blue-50">View
-            Profile</button>
-        </div>
-        <div class="text-center">
-          <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
-          <h4 class="text-xl font-semibold">Prem Kumar</h4>
-          <p class="text-gray-600 mb-2">Microsoft</p>
-          <p class="text-sm text-gray-500 mb-4">Mentorship</p>
-          <button class="text-blue-600 border border-blue-600 px-4 py-1 rounded-md hover:bg-blue-50">View
-            Profile</button>
-        </div>
+      <div class="text-center pb-12">
+        <span class="text-secondary font-popins font-semibold leading-6 tracking-wider">DISCOVER OUR MENTORS</span>
+        <h2 class="mt-4 text-[32px] font-semibold text-primary leading-11 max-w-[922px] mx-auto font-popins">We have
+          Industry Experts
+          as Mentor
+          who guide you
+          with
+          Career Planning &
+          Interview
+          Preparation</h2>
       </div>
 
-      <div class="text-center mt-8">
-        <button class="text-blue-600 border border-blue-600 px-6 py-2 rounded-md hover:bg-blue-50">More Mentor
-          Details</button>
+
+      <div class="container ">
+        <div class="lg:px-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
+          <div class="shadow-2.5xl">
+            <div>
+              <img class="w-full" src="src/assets/image/mentors-1.jpg" alt="mentors">
+            </div>
+            <div class="px-3.5 py-4 flex justify-between">
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h4 class="font-semibold tracking-tight leading-6">Sachin Sharma</h4>
+                  <p class="text-sm leading-6 tracking-tight text-primary/50">Managing Director</p>
+                </div>
+                <div class="flex items-center mt-4 gap-2.5">
+                  <img class="max-w-[18px]" src="src/assets/image/linedin.png" alt="linedin">
+                  <a class="text-xs font-popins leading-5 text-[#006DD9] tracking-wide" href="#">View Profile</a>
+                </div>
+              </div>
+              <div class="w-20">
+                <img src="src/assets/image/microsoft.png" alt="microsoft">
+              </div>
+            </div>
+          </div>
+          <div class="shadow-2.5xl">
+            <div>
+              <img class="w-full" src="src/assets/image/mentors-1.jpg" alt="mentors">
+            </div>
+            <div class="px-3.5 py-4 flex justify-between">
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h4 class="font-semibold tracking-tight leading-6">Sachin Sharma</h4>
+                  <p class="text-sm leading-6 tracking-tight text-primary/50">Managing Director</p>
+                </div>
+                <div class="flex items-center mt-4 gap-2.5">
+                  <img class="max-w-[18px]" src="src/assets/image/linedin.png" alt="linedin">
+                  <a class="text-xs font-popins leading-5 text-[#006DD9] tracking-wide" href="#">View Profile</a>
+                </div>
+              </div>
+              <div class="w-20">
+                <img src="src/assets/image/microsoft.png" alt="microsoft">
+              </div>
+            </div>
+          </div>
+          <div class="shadow-2.5xl">
+            <div>
+              <img class="w-full" src="src/assets/image/mentors-1.jpg" alt="mentors">
+            </div>
+            <div class="px-3.5 py-4 flex justify-between">
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h4 class="font-semibold tracking-tight leading-6">Sachin Sharma</h4>
+                  <p class="text-sm leading-6 tracking-tight text-primary/50">Managing Director</p>
+                </div>
+                <div class="flex items-center mt-4 gap-2.5">
+                  <img class="max-w-[18px]" src="src/assets/image/linedin.png" alt="linedin">
+                  <a class="text-xs font-popins leading-5 text-[#006DD9] tracking-wide" href="#">View Profile</a>
+                </div>
+              </div>
+              <div class="w-20">
+                <img src="src/assets/image/microsoft.png" alt="microsoft">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-28">
+        <button class="btn rounded-sm">More Mentor Details</button>
       </div>
     </div>
   </section>
 
   <!-- Testimonial -->
-  <section class="py-12 px-6 bg-gray-50">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">Thousands of stories of growth</h2>
-      <p class="text-center text-gray-600 mb-12">Find out how our Learners transformed their careers after learning with
-        us.</p>
-
-      <div class="bg-white p-8 rounded-lg shadow-md">
-        <blockquote class="text-gray-600 mb-6">
-          "As a senior engineer I have specially reviewed the System Design content and live classes of My_Tutor and I
+  <section class="container">
+    <div class="flex flex-col md:flex-row gap-[5.254%]">
+      <div class="w-full md:w-[44%]">
+        <span class="text-5xl font-inter font-bold leading-16 tracking-wider text-primary/85">Thousands of stories
+          of growth</span>
+        <p class="font-popins leading-8 text-primary/60 font-normal max-w-[482px] mt-5">Find out how our Learners
+          transformed
+          their careers
+          after
+          learning witH us.</p>
+      </div>
+      <div class="w-full md:w-[50.745%] font-popins px-6 py-7 space-y-6 shadow-3.1xl">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="43" fill="none">
+            <path fill="#1B99D4"
+              d="m50 .426-1.153 7.852c-2.865-.189-5.032.316-6.499 1.514-1.468 1.199-2.41 2.838-2.83 4.92-.42 2.081-.524 4.383-.315 6.906H50V43H29.455V18.78c0-6.623 1.782-11.605 5.346-14.948C38.435.426 43.5-.71 50 .426Zm-29.455 0-1.153 7.852c-2.865-.189-5.031.316-6.499 1.514-1.467 1.199-2.41 2.838-2.83 4.92-.42 2.081-.524 4.383-.315 6.906h10.797V43H0V18.78C0 12.157 1.782 7.175 5.346 3.832 8.98.426 14.046-.71 20.546.426Z" />
+          </svg>
+        </div>
+        <p>“As a senior engineer I have specially reviewed the System Design content and live classes of My_Tutor and I
           found it more on the implementation side instead of theoretical concepts which helps to work in real-time
-          environment in the organization. I would recommend My_Tutor course to get expertise in System Design."
-        </blockquote>
-        <div class="flex items-center">
-          <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
-          <div>
-            <h4 class="font-semibold">Prem Kumar Perera</h4>
-            <button class="text-blue-600 text-sm">View Profile</button>
+          environment in the organization. I would recommend My_Tutor course to get expertise in System Design.”</p>
+        <div class="flex items-end justify-between">
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div>
+              <img src="src/assets/image/testimonial.png" alt="testimonial">
+            </div>
+            <div>
+              <h4 class="flex font-popins font-semibold text-secondary">Prem Kumar</h4>
+              <div class="flex mt-6">
+                <div><img src="src/assets/icon/star.png" alt="star"></div>
+                <div><img src="src/assets/icon/star.png" alt="star"></div>
+                <div><img src="src/assets/icon/star.png" alt="star"></div>
+                <div><img src="src/assets/icon/star.png" alt="star"></div>
+                <div><img src="src/assets/icon/star-2.png" alt="star"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center mt-4 gap-2.5">
+            <img class="max-w-[18px]" src="src/assets/image/linedin.png" alt="linedin">
+            <a class="text-xs font-popins leading-5 text-[#006DD9] tracking-wide" href="#">View Profile</a>
           </div>
         </div>
       </div>

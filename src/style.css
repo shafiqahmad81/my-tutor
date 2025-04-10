@@ -26,7 +26,6 @@
   --color-gray: #6F6B80;
   --color-dark: #231F40;
   --color-dark-gray: #4D607D;
-  --color-medium-gray: #E1E1E1;
 
   /* border radius */
   --radius-ex-sm: 0.313rem;  /* 5px */
@@ -38,9 +37,11 @@
 
   /* box shadow */
   
+  --shadow-2.3xl: 0px 0px 16px 4px rgba(126, 126, 126, 0.1);  
   --shadow-2.4xl: 0px 7px 29px rgba(99, 99, 110, 0.2);  
   --shadow-2.5xl: 0px 10px 30px rgba(0, 0, 0, 0.07);  
   --shadow-3xl: 1px 5px 50px rgba(84, 99, 122, 0.1);  
+  --shadow-3.1xl: 14px 2px 16px -8px rgba(84, 99, 122, 0.1);  
   --shadow-4xl: 0.914005px 4.57002px 45.7002px rgba(84, 99, 122, 0.1);  
 }
 
