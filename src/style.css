@@ -82,6 +82,14 @@ button{
   .btn{
     @apply bg-secondary text-white px-5 py-2 rounded-ex-sm font-semibold border border-secondary hover:text-white/60 hover:border-primary transition-all duration-500 
   }
+  .half-circle::after {
+    content: "";
+    @apply absolute -bottom-1 -left-1 w-4 h-2.5 rounded-t-full border-t border-l border-r border-b-0 border-[#D9D9D9] box-border bg-white rotate-90 ;
+  }
+  .half-circle::before {
+    content: "";
+    @apply absolute -bottom-1 -right-1 w-4 h-2.5 rounded-t-full border-t border-l border-r border-b-0 border-[#D9D9D9] box-border bg-white -rotate-90;
+  }
 }
 
 
